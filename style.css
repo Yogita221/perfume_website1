@@ -1,0 +1,332 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: #333;
+    background-color: #d9d9d9;
+}
+
+/* /-----------------------/ */
+header {
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.1);
+    padding: 10px;
+    background-color: #d9d9d9;
+    color: #000;
+    width: 100%;
+}
+
+
+
+header .logo h1 {
+    padding: 5px;
+    font-variant-caps: all-small-caps;
+    text-align: center;
+    font-size: 3.2vw;
+}
+.logo span{
+    font-size: 2.9vw;
+}
+.logo sup{
+    font-size: 25px;
+}
+
+/* ------------------------------------ */
+
+header .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+
+header .searchTerm {
+    width: 400px;
+    border: 2px solid #050606;
+    border-radius: 50px;
+    border-right: none;
+    padding: 5px 10px;
+    outline: none;
+    color: #080908;
+}
+
+header .searchButton {
+    text-align: center;
+    color: #000000;
+    background-color: #d9d9d9;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+/* Nav Bar Section */
+
+header .nav-detail{
+    padding: 10px 30px;
+    text-align: center;
+}
+
+header .nav-detail .nav-header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    font-size: small;
+    
+}
+
+header .nav-detail .nav-header .nav-header-items{
+    padding: 0;
+}
+  
+/* Products Section */
+.products-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.product-card h5{
+    color: gray;
+    font-weight: 500;
+    font-size: small;
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.price {
+    color: #666;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.product-card button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.product-card button:hover {
+    background-color: #555;
+}
+
+
+
+faq-section h2 {
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.faq-section {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq h3 {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* -------------------------------- */
+footer {
+    background-color: #333;
+    color: #f5f5f5;
+    padding: 40px 10px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+   
+    
+    min-width: 180px;
+}
+.footer-column h5{
+    font-size: 0.9vw;
+    padding-bottom: 15px;
+
+}
+
+.footer-column a, .footer-column p {
+    display: block;
+    color: #f5f5f5;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 0.9vw;
+}
+
+.contact-info p {
+    font-size: 14px;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.newsletter .email{
+    border-bottom: 2px solid black;
+}
+
+.newsletter .email input[type="email"] {
+    
+    padding: 10px;
+    width: 152px;
+    border: none;  
+    color: #f5f5f5;
+    background-color: #333;   
+    font-size: 1vw;
+    
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.most-searched {
+    margin-bottom: 20px;
+}
+
+.most-searched h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.most-searched p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-note {
+    font-size: 12px;
+    color: #aaa;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ------------------------------ */
+.space{
+    height: 70px;
+}
+.shop-by-notes{
+    padding: 50px 40px; 
+} 
+.why-bellavita {
+    padding: 50px 40px;
+}
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .notes-container, .benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .note, .benefit {
+    text-align: center;
+    width: 200px;
+  }
+  
+  .note img, .benefit img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .note p, .benefit h3 {
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .benefit p {
+    font-size: 1.1vw;
+    color: #666;
+  }
